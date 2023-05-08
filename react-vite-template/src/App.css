@@ -1,0 +1,86 @@
+#root {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8rem;
+}
+.logo {
+	height: 3em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+h1 {
+	width: 30rem;
+	margin-bottom: 0;
+	font-size: 4em;
+	line-height: 1.1;
+}
+.intro {
+	width: 20rem;
+	margin-bottom: 3rem;
+}
+
+button {
+	color: black;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	padding: 1.2em 1.5em;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: inherit;
+	background-color: white;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+.section-1 {
+	margin-bottom: 10rem;
+	padding: 3rem 5rem;
+	background-color: #242424;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+.section-2 {
+	display: flex;
+	justify-content: space-around;
+	gap: 7rem;
+	margin-bottom: 10rem;
+}
+h2 {
+	margin-bottom: 0;
+}
+article p {
+	margin-top: 0.3rem;
+}
+article img {
+	position: relative;
+	left: -20px;
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
